@@ -18,7 +18,6 @@ const Contactus = () => {
             animation: 'slide 15s linear infinite' 
           }}
         >
-
           {/* News Card 1 */}
           <div 
             className='news-card bg-white border border-gray-300 shadow-lg rounded-lg p-6 flex-shrink-0 w-full md:w-1/3'
@@ -67,30 +66,30 @@ const Contactus = () => {
       {/* Contact Section */}
       <div className='flex items-center justify-between w-full p-4 bg-white border border-gray-300 shadow-xl mb-8 flex-col md:flex-row'>
         <img className='w-48 mb-4 md:mb-0' src={contact} alt="Contact" />
-        <div className='text-3xl font-serif mb-4 md:mb-0 md:ml-5'>
+        <div className='text-3xl font-serif mb-4 md:mb-0 md:ml-5 text-center'>
           We are excited to discuss your software development needs!!!
         </div>
         <Link to="/contact">
-          <div className='px-5 py-3 bg-purple-500 text-white font-semibold rounded hover:bg-purple-600 transition-colors duration-300'>
+          <div className='px-5 py-3 bg-purple-500 text-white font-semibold rounded hover:bg-purple-600 transition-colors duration-300 text-center'>
             Contact Us
           </div>
         </Link>
       </div>
 
       {/* Social Media Links */}
-      <div className='flex items-center space-x-6 mt-4'>
-        <h1 className='text-5xl font-serif font-medium mr-8'>CONNECT:</h1>
+      <div className='flex items-center mt-4 flex-wrap justify-center md:justify-start'>
+        <h1 className='text-5xl font-serif font-medium mr-8 mb-4 md:mb-0'>CONNECT:</h1>
         <a href="https://www.instagram.com/zeit_tech/" target="_blank" rel="noopener noreferrer">
-          <img className='w-full h-10' src={insta} alt="Instagram" />
+          <img className='w-full h-9 mb-4' src={insta} alt="Instagram" />
         </a>
         <a href="https://www.linkedin.com/company/zeittechgroup" target="_blank" rel="noopener noreferrer">
-          <img className='w-full h-10' src={linked} alt="LinkedIn" />
+          <img className='w-full h-9 mb-4' src={linked} alt="LinkedIn" />
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <img className=' w-full h-10' src={twitter} alt="Twitter" />
+          <img className='w-full h-8 mb-4' src={twitter} alt="Twitter" />
         </a>
       </div>
-      
+
       {/* Inline CSS for animation */}
       <style>{`
         @keyframes slide {
